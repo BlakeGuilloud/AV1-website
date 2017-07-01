@@ -7,6 +7,6 @@
   "author": "Blake Guilloud",
   "license": "MIT",
   "scripts": {
-    "deploy": "aws s3 cp index.html s3://av1-website/index.html --acl public-read"
+    "deploy": "aws s3 cp index.html s3://av1.io/index.html --acl public-read"
   }
 }
