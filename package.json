@@ -1,0 +1,12 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "AV1 Website",
+  "main": "index.js",
+  "repository": "git@github.com:av1-io/website.git",
+  "author": "Blake Guilloud",
+  "license": "MIT",
+  "scripts": {
+    "deploy": "aws s3 cp index.html s3://av1-website/index.html --acl public-read"
+  }
+}
