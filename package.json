@@ -7,6 +7,7 @@
   "author": "Blake Guilloud",
   "license": "MIT",
   "devDependencies": {
+    "av1-scripts": "^0.0.4",
     "react-scripts": "1.0.10"
   },
   "dependencies": {
@@ -14,7 +15,7 @@
     "react-dom": "^15.6.1"
   },
   "scripts": {
-    "deploy": "yarn build && node deploy",
+    "deploy": "yarn build && av1 deploy reactApp",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
