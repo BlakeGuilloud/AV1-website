@@ -14,7 +14,7 @@
     "react-dom": "^15.6.1"
   },
   "scripts": {
-    "deploy": "aws s3 cp index.html s3://av1.io/index.html --acl public-read",
+    "deploy": "yarn build && node deploy",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
