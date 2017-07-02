@@ -6,7 +6,18 @@
   "repository": "git@github.com:av1-io/website.git",
   "author": "Blake Guilloud",
   "license": "MIT",
+  "devDependencies": {
+    "react-scripts": "1.0.10"
+  },
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
   "scripts": {
-    "deploy": "aws s3 cp index.html s3://av1.io/index.html --acl public-read"
+    "deploy": "aws s3 cp index.html s3://av1.io/index.html --acl public-read",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }
