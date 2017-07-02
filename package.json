@@ -7,7 +7,7 @@
   "author": "Blake Guilloud",
   "license": "MIT",
   "devDependencies": {
-    "av1-scripts": "^0.0.4",
+    "av1-scripts": "^1.0.0",
     "react-scripts": "1.0.10"
   },
   "dependencies": {
