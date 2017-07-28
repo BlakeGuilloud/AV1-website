@@ -8,11 +8,12 @@
   "license": "MIT",
   "devDependencies": {
     "av1-scripts": "^1.0.0",
-    "react-scripts": "1.0.10",
     "eslint": "^4.3.0",
     "eslint-config-prettier": "^2.3.0",
     "eslint-plugin-prettier": "^2.1.2",
-    "prettier": "^1.5.3"
+    "prettier": "^1.5.3",
+    "rcc-cli": "^1.0.14",
+    "react-scripts": "1.0.10"
   },
   "dependencies": {
     "react": "^15.6.1",
@@ -20,7 +21,7 @@
   },
   "scripts": {
     "prettify": "prettier --single-quote --print-width 80 --trailing-comma es5 --write 'src/**/*.js'",
-    "eslint": "eslint --init",
+    "rcc": "rcc",
     "deploy": "yarn build && av1 deploy reactApp",
     "start": "react-scripts start",
     "build": "react-scripts build",
