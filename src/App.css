@@ -1,17 +1,27 @@
 body {
   margin: 0;
 }
+
 .App {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: black; 
   height: 100vh;
 }
 
 img {
+  width: 350px;
   border-radius: 50%;
-  border-width: 10px;
-  border-color: white;
+  border-width: 1px;
   border-style: solid;
+  animation: pulse 6s infinite;
+  background-color: white;
+}
+
+
+@keyframes pulse {
+  50% {
+    background-color: #161616;
+  }
 }
