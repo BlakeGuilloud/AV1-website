@@ -7,7 +7,7 @@
   "author": "Blake Guilloud",
   "license": "MIT",
   "devDependencies": {
-    "av1-scripts": "^1.0.0",
+    "aws-cli": "^0.0.1",
     "eslint": "^4.3.0",
     "eslint-config-prettier": "^2.3.0",
     "eslint-plugin-prettier": "^2.1.2",
@@ -22,7 +22,7 @@
   "scripts": {
     "prettify": "prettier --single-quote --print-width 80 --trailing-comma es5 --write 'src/**/*.js'",
     "rcc": "rcc",
-    "deploy": "yarn build && av1 deploy reactApp",
+    "deploy": "yarn build && aws s3 sync build s3://av1.io --profile av1",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",

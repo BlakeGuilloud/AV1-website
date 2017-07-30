@@ -6,6 +6,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <div className="img__wrapper" />
         <img src={logo} alt="i have failed you" />
       </div>
     );

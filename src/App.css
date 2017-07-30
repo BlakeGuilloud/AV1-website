@@ -15,13 +15,24 @@ img {
   border-radius: 50%;
   border-width: 1px;
   border-style: solid;
-  animation: pulse 6s infinite;
-  background-color: white;
+  background-color: #161616;
 }
 
+.img__wrapper {
+  position: absolute;
+  border-top: 2px solid white;
+  border-left: 1px solid white;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  animation: loader 2s linear infinite;
+}
 
-@keyframes pulse {
-  50% {
-    background-color: #161616;
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
