@@ -7,7 +7,7 @@ class App extends Component {
     return (
       <div>
         <div className="App">
-         <div className="under_construction">Under Construction</div>
+          <div className="under_construction">Under Construction</div>
           <div className="img__wrapper" />
           <img src={logo} alt="i have failed you" />
         </div>
