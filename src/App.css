@@ -3,12 +3,12 @@ body {
 }
 
 .App {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
   background-color: black; 
   height: 100vh;
-  flex-direction: column;
+  flex-direction: column; 
 }
 
 img {
@@ -26,6 +26,10 @@ img {
   width: 350px;
   height: 350px;
   border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  margin-left: -175px;
+  margin-top: -175px;
   animation: loader 2s linear infinite;
 }
 
@@ -46,4 +50,8 @@ img {
   text-transform: uppercase;
   font-size: 12px;
   border-bottom: 1px solid white;
+  left: 50%;
+  margin-left: -75px;
+  width: 150px;
+  text-align: center;
 }
