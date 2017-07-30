@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
+import logo from './av1-logo.png';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <h2>Under Construction...</h2>
+        <img src={logo} alt="i have failed you" />
       </div>
     );
   }
