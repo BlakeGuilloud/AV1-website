@@ -3,12 +3,12 @@ body {
 }
 
 .App {
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
+  /* display: flex;  */
+  /* justify-content: center;  */
+  /* align-items: center;  */
   background-color: black; 
   height: 100vh;
-  flex-direction: column; 
+  /* flex-direction: column;  */
 }
 
 img {
@@ -17,12 +17,20 @@ img {
   border-width: 1px;
   border-style: solid;
   background-color: #161616;
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  margin-left: -175px;
+  margin-top: -175px;
 }
 
 .img__wrapper {
   position: absolute;
-  border-top: 2px solid white;
-  border-left: 1px solid white;
+  border-top: 3px solid white;
+  border-left: 2px solid white;
   width: 350px;
   height: 350px;
   border-radius: 50%;
@@ -54,17 +62,4 @@ img {
   margin-left: -75px;
   width: 150px;
   text-align: center;
-}
-
-@media screen and (max-width: 480px) {
-  img, .img__wrapper {
-    width: 200px;
-    height: 200px;
-  }
-
-  .img__wrapper {
-    margin-left: -100px;
-    margin-top: -100px;
-  }
-
 }
