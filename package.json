@@ -8,24 +8,25 @@
   "license": "MIT",
   "devDependencies": {
     "aws-cli": "^0.0.1",
+    "concurrently": "^3.5.0",
     "eslint": "^4.3.0",
     "eslint-config-prettier": "^2.3.0",
     "eslint-plugin-prettier": "^2.1.2",
-    "prettier": "^1.5.3",
+    "node-sass": "^4.5.3",
     "rcc-cli": "^1.0.14",
     "react-scripts": "1.0.10"
   },
   "dependencies": {
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "react-router-dom": "^4.2.2"
   },
   "scripts": {
-    "prettify": "prettier --single-quote --print-width 80 --trailing-comma es5 --write 'src/**/*.js'",
     "rcc": "rcc",
     "deploy": "yarn build && aws s3 sync build s3://av1.io --profile av1",
+    "watch-css": "node-sass -w --output-style compressed src/sass/main.scss src/index.css",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "dev": "concurrently \"yarn watch-css\" \"yarn start\""
   }
 }
