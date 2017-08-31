@@ -3,9 +3,15 @@
 @import 'content';
 @import 'footer';
 @import 'blog';
+@import 'post';
 
 body {
   margin: 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+a {
+  text-decoration: inherit;
+  color: inherit;
 }
 
 .App {

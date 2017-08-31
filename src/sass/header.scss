@@ -6,6 +6,7 @@
   justify-content: space-between;
   padding: 20px;
   animation: fadeIn 4s linear;
+  // font-family: 'Slabo 27px', serif;  
 }
 
 .navigation {
@@ -22,15 +23,11 @@
     list-style: none;
     margin-left: 10px;
     margin-right: 10px;
-    font-size: 18px;
+    font-size: 28px;
     cursor: pointer;
   }
   span {
     font-size: 24px;
-  }
-  a {
-    text-decoration: inherit;
-    color: inherit;
   }
 }
 

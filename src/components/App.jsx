@@ -8,6 +8,7 @@ import {
 
 import Blog from './Blog';
 import Contact from './Contact';
+import { ServerlessArchitecture } from './posts';
 
 class App extends Component {
   render() {
@@ -33,7 +34,9 @@ class App extends Component {
             <div className="content-container">
               <Route exact path="/blog" component={Blog} />
               <Route path="/contact" component={Contact} />
+              <Route path="/blog/1" component={ServerlessArchitecture} />
             </div>
+
             <div className="footer-container">
               AV1 &nbsp; | &nbsp; 2017
             </div>

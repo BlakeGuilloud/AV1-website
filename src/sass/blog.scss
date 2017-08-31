@@ -1,14 +1,11 @@
 .blog {
   animation: fadeIn 6s linear;
-  color: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #1c1c1c;
   overflow: scroll;
   animation: fadeIn 1s linear;
-  box-shadow: inset 0 0 5px white;  
 }
 
 .blog__item {
@@ -19,9 +16,8 @@
   background-color: #3f3f3f;
   display: flex;
   height: 400px;
-  cursor: pointer;
   box-shadow: inset 0 0 10px white;
-  padding: 2px;  
+  padding: 2px;
 }
 
 .blog__item-image {
@@ -43,12 +39,26 @@
 
 .blog__item-main {
   margin: 10px;
+  cursor: pointer;
+  :hover {
+    font-weight: 800;
+  }
 }
 
 .blog__item-title {
+  font-family: 'Ubuntu', sans-serif;
   border-bottom: 1px solid white;
   font-size: 26px;
   margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.blog__item-summary {
+  font-size: 20px;
+}
+
+.blog__item-footer {
+  font-size: 20px;
 }
 
 .blog__item-content {
@@ -61,6 +71,5 @@
 .blog__item-footer {
   margin: 10px;
   display: flex;
-  // justify-content: space-between;
   flex-direction: column;
 }

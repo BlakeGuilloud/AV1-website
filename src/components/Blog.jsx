@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 
 class Blog extends Component {
   render() {
@@ -7,14 +8,14 @@ class Blog extends Component {
         <div className="blog__item">
           <div className="blog__item-image image__bill" />
           <div className="blog__item-content">
-            <div className="blog__item-main">
+            <Link to="/blog/1" className="blog__item-main">
               <div className="blog__item-title">
                 Writing Serverless Apps with NodeJS
               </div>
               <div className="blog__item-summary">
                 My journey in and around serverless architecture.
               </div>
-            </div>
+            </Link>
             <div className="blog__item-footer">
               <div className="blog__item-author">
                 Blake Guilloud
